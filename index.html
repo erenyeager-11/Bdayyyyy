@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171420">
+  <title>Happy Birthday Alveera</title>
+  <link rel="preload" href="assets/birthday-stage.png" as="image">
+  <link rel="preload" href="assets/birthday-album-cover.png" as="image">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <svg class="icon-sprite" aria-hidden="true" focusable="false">
+    <symbol id="icon-party" viewBox="0 0 24 24">
+      <path d="m5.8 11.3 6.9 6.9a2 2 0 0 0 3.3-.8l2.5-10.1a1.4 1.4 0 0 0-1.7-1.7L6.7 8.1a2 2 0 0 0-.9 3.2Z"></path>
+      <path d="m7 9 8 8"></path>
+      <path d="M14 4.5c.9-1.1 2.4-1.3 3.5-.4"></path>
+      <path d="M17.8 10.7c1.3.1 2.3 1.1 2.5 2.3"></path>
+      <path d="M9.8 5.2c.2-1.3 1.2-2.3 2.5-2.5"></path>
+    </symbol>
+    <symbol id="icon-play" viewBox="0 0 24 24">
+      <path d="M8 5.2v13.6a1.2 1.2 0 0 0 1.9 1l9.6-6.8a1.2 1.2 0 0 0 0-2L9.9 4.2A1.2 1.2 0 0 0 8 5.2Z"></path>
+    </symbol>
+    <symbol id="icon-pause" viewBox="0 0 24 24">
+      <path d="M8 5h2.8v14H8z"></path>
+      <path d="M13.2 5H16v14h-2.8z"></path>
+    </symbol>
+    <symbol id="icon-spark" viewBox="0 0 24 24">
+      <path d="m12 2 1.9 6.1L20 10l-6.1 1.9L12 18l-1.9-6.1L4 10l6.1-1.9Z"></path>
+      <path d="m19 15 .8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8Z"></path>
+      <path d="m5 14 .6 1.4L7 16l-1.4.6L5 18l-.6-1.4L3 16l1.4-.6Z"></path>
+    </symbol>
+    <symbol id="icon-cake" viewBox="0 0 24 24">
+      <path d="M4 11h16v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"></path>
+      <path d="M4 15c1 1 2 1 3 0s2-1 3 0 2 1 3 0 2-1 3 0 2 1 4 0"></path>
+      <path d="M8 11V8"></path>
+      <path d="M12 11V8"></path>
+      <path d="M16 11V8"></path>
+      <path d="M8 4.5c.8.6.8 1.6 0 2.2-.8-.6-.8-1.6 0-2.2Z"></path>
+      <path d="M12 3.5c.8.6.8 1.6 0 2.2-.8-.6-.8-1.6 0-2.2Z"></path>
+      <path d="M16 4.5c.8.6.8 1.6 0 2.2-.8-.6-.8-1.6 0-2.2Z"></path>
+    </symbol>
+    <symbol id="icon-gift" viewBox="0 0 24 24">
+      <path d="M3 9h18v4H3z"></path>
+      <path d="M5 13h14v8H5z"></path>
+      <path d="M12 9v12"></path>
+      <path d="M12 9H8.5A2.5 2.5 0 1 1 12 5.6"></path>
+      <path d="M12 9h3.5A2.5 2.5 0 1 0 12 5.6"></path>
+    </symbol>
+    <symbol id="icon-music" viewBox="0 0 24 24">
+      <path d="M9 18V5l11-2v13"></path>
+      <path d="M9 18a3 3 0 1 1-2.9-3"></path>
+      <path d="M20 16a3 3 0 1 1-2.9-3"></path>
+      <path d="M9 9.5 20 7.5"></path>
+    </symbol>
+    <symbol id="icon-heart" viewBox="0 0 24 24">
+      <path d="M20.4 5.6a5.1 5.1 0 0 0-7.2 0L12 6.8l-1.2-1.2a5.1 5.1 0 1 0-7.2 7.2L12 21l8.4-8.2a5.1 5.1 0 0 0 0-7.2Z"></path>
+    </symbol>
+    <symbol id="icon-volume" viewBox="0 0 24 24">
+      <path d="M4 9v6h4l5 4V5L8 9Z"></path>
+      <path d="M16 8.5a5 5 0 0 1 0 7"></path>
+      <path d="M18.5 6a8 8 0 0 1 0 12"></path>
+    </symbol>
+    <symbol id="icon-shuffle" viewBox="0 0 24 24">
+      <path d="M16 3h5v5"></path>
+      <path d="M4 20 21 3"></path>
+      <path d="M21 16v5h-5"></path>
+      <path d="M15 15l6 6"></path>
+      <path d="M4 4l5 5"></path>
+    </symbol>
+    <symbol id="icon-repeat" viewBox="0 0 24 24">
+      <path d="m17 2 4 4-4 4"></path>
+      <path d="M3 11V9a3 3 0 0 1 3-3h15"></path>
+      <path d="m7 22-4-4 4-4"></path>
+      <path d="M21 13v2a3 3 0 0 1-3 3H3"></path>
+    </symbol>
+    <symbol id="icon-next" viewBox="0 0 24 24">
+      <path d="m5 4 10 8L5 20Z"></path>
+      <path d="M19 5v14"></path>
+    </symbol>
+    <symbol id="icon-save" viewBox="0 0 24 24">
+      <path d="M5 3h12l2 2v16H5Z"></path>
+      <path d="M8 3v6h8V3"></path>
+      <path d="M8 21v-7h8v7"></path>
+    </symbol>
+    <symbol id="icon-brush" viewBox="0 0 24 24">
+      <path d="m14.6 5.4 4 4"></path>
+      <path d="M13 7 4 16v4h4l9-9"></path>
+      <path d="m15 5 1.5-1.5a2.1 2.1 0 0 1 3 3L18 8"></path>
+    </symbol>
+    <symbol id="icon-camera" viewBox="0 0 24 24">
+      <path d="M4 7h4l2-3h4l2 3h4v13H4Z"></path>
+      <path d="M12 11a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z"></path>
+    </symbol>
+    <symbol id="icon-plus" viewBox="0 0 24 24">
+      <path d="M12 5v14"></path>
+      <path d="M5 12h14"></path>
+    </symbol>
+    <symbol id="icon-trash" viewBox="0 0 24 24">
+      <path d="M4 7h16"></path>
+      <path d="M10 11v6"></path>
+      <path d="M14 11v6"></path>
+      <path d="M6 7l1 14h10l1-14"></path>
+      <path d="M9 7V4h6v3"></path>
+    </symbol>
+    <symbol id="icon-timer" viewBox="0 0 24 24">
+      <path d="M12 8v5l3 2"></path>
+      <path d="M9 2h6"></path>
+      <path d="M12 21a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"></path>
+    </symbol>
+    <symbol id="icon-chevron" viewBox="0 0 24 24">
+      <path d="m9 18 6-6-6-6"></path>
+    </symbol>
+  </svg>
+
+  <canvas id="confettiCanvas" class="fx-canvas" aria-hidden="true"></canvas>
+  <canvas id="fireworkCanvas" class="fx-canvas" aria-hidden="true"></canvas>
+  <div class="cursor-glow" data-cursor-glow aria-hidden="true"></div>
+
+  <div class="loader" id="loader" aria-live="polite">
+    <div class="loader__ring"></div>
+    <div>
+      <p class="loader__tiny">Loading celebration</p>
+      <p class="loader__title">Alveera's Birthday</p>
+    </div>
+  </div>
+
+  <header class="topbar" data-topbar>
+    <a class="brand" href="#stage" aria-label="Alveera birthday home">
+      <span class="brand__mark">
+        <svg class="icon icon--beat"><use href="#icon-party"></use></svg>
+      </span>
+      <span>
+        <strong>Alveera</strong>
+        <small>birthday night</small>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#music">Music</a>
+      <a href="#cake">Cake</a>
+      <a href="#wishes">Wishes</a>
+      <a href="#gifts">Gifts</a>
+      <a href="#guestbook">Guestbook</a>
+    </nav>
+    <div class="topbar__actions">
+      <button class="icon-button" type="button" data-theme-cycle aria-label="Change color theme" title="Change color theme">
+        <svg class="icon icon--spin-slow"><use href="#icon-brush"></use></svg>
+      </button>
+      <button class="button button--compact" type="button" data-confetti-burst>
+        <svg class="icon icon--wiggle"><use href="#icon-spark"></use></svg>
+        Blast
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="stage" id="stage" aria-labelledby="stageTitle">
+      <img class="stage__image" src="assets/birthday-stage.png" alt="Illustrated birthday stage with cake, balloons, lights, and confetti.">
+      <div class="stage__overlay" aria-hidden="true"></div>
+      <div class="stage__content">
+        <p class="eyebrow">Full party mode</p>
+        <h1 id="stageTitle"><span data-recipient-name>Alveera</span>'s birthday is live.</h1>
+        <p class="stage__copy" data-main-message>
+          A whole little universe of music, wishes, memories, gifts, confetti, and candlelight made specially for you today.
+        </p>
+        <div class="stage__actions" aria-label="Main actions">
+          <button class="button button--primary" type="button" data-start-party>
+            <svg class="icon icon--beat"><use href="#icon-party"></use></svg>
+            Start party
+          </button>
+          <button class="button button--ghost" type="button" data-open-wish>
+            <svg class="icon icon--float"><use href="#icon-heart"></use></svg>
+            Make a wish
+          </button>
+          <button class="button button--ghost" type="button" data-jump-player>
+            <svg class="icon icon--pulse"><use href="#icon-music"></use></svg>
+            Play song
+          </button>
+        </div>
+      </div>
+      <aside class="stage-card" aria-label="Party stats">
+        <div class="stage-card__pulse"></div>
+        <p class="panel-kicker">Tonight's vibe</p>
+        <strong data-party-vibe>Midnight fireworks</strong>
+        <div class="mini-meter" aria-hidden="true">
+          <span style="--i:1"></span>
+          <span style="--i:2"></span>
+          <span style="--i:3"></span>
+          <span style="--i:4"></span>
+          <span style="--i:5"></span>
+        </div>
+        <p class="small-copy">A birthday anthem, a sky full of sparks, and a day that belongs to Alveera.</p>
+      </aside>
+    </section>
+
+    <section class="control-dock section-pad" id="personalize" aria-labelledby="personalizeTitle">
+      <div class="section-heading">
+        <p class="eyebrow">Birthday card</p>
+        <h2 id="personalizeTitle">Made for Alveera, with every light switched on</h2>
+      </div>
+      <div class="birthday-card-grid">
+        <article class="birthday-card">
+          <svg class="icon icon--beat"><use href="#icon-heart"></use></svg>
+          <p class="panel-kicker">For Alveera</p>
+          <h3>Happy birthday to the person who makes ordinary days feel brighter.</h3>
+          <p>Today is all yours: the music, the candles, the wishes, the surprise boxes, and every little sparkle on this page.</p>
+        </article>
+        <article class="birthday-card birthday-card--accent">
+          <svg class="icon icon--float"><use href="#icon-spark"></use></svg>
+          <p class="panel-kicker">Today's mood</p>
+          <h3>Laugh loudly, glow softly, and collect beautiful memories.</h3>
+          <p>This page is already set for your birthday, so just press play, open the gifts, make a wish, and enjoy it.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-pad music-zone" id="music" aria-labelledby="musicTitle">
+      <div class="section-heading">
+        <p class="eyebrow">Spotify-style scene</p>
+        <h2 id="musicTitle">Alveera's birthday song scene</h2>
+        <p>A glossy music moment wrapped in lights, motion, and skyline glow.</p>
+      </div>
+
+      <div class="music-layout">
+        <article class="player-shell" aria-label="Birthday music player">
+          <div class="album-scene">
+            <div class="album-scene__sky">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <img class="album-cover" src="assets/birthday-album-cover.png" alt="Birthday album cover art.">
+            <div class="vinyl" aria-hidden="true">
+              <div class="vinyl__shine"></div>
+            </div>
+            <canvas id="visualizerCanvas" class="visualizer-canvas" width="520" height="190" aria-hidden="true"></canvas>
+            <div class="equalizer" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+
+          <div class="track-meta">
+            <div>
+              <p class="panel-kicker">Now playing</p>
+              <h3 data-track-title>Alveera's Birthday Anthem</h3>
+              <p data-track-artist>Made with love</p>
+            </div>
+            <button class="icon-button icon-button--liked" type="button" data-like-track aria-label="Favorite track" title="Favorite track">
+              <svg class="icon icon--beat"><use href="#icon-heart"></use></svg>
+            </button>
+          </div>
+
+          <div class="progress-wrap">
+            <span data-current-time>0:00</span>
+            <input id="progressRange" class="range range--progress" type="range" min="0" max="1000" value="0" aria-label="Song progress">
+            <span data-duration>0:00</span>
+          </div>
+
+          <div class="player-controls">
+            <button class="icon-button" type="button" data-shuffle aria-label="Shuffle mood" title="Shuffle mood">
+              <svg class="icon"><use href="#icon-shuffle"></use></svg>
+            </button>
+            <button class="icon-button" type="button" data-prev-track aria-label="Restart track" title="Restart track">
+              <svg class="icon icon--back"><use href="#icon-next"></use></svg>
+            </button>
+            <button class="play-button" type="button" data-play-toggle aria-label="Play song">
+              <svg class="icon play-icon"><use href="#icon-play"></use></svg>
+              <svg class="icon pause-icon"><use href="#icon-pause"></use></svg>
+            </button>
+            <button class="icon-button" type="button" data-next-track aria-label="Replay track" title="Replay track">
+              <svg class="icon"><use href="#icon-next"></use></svg>
+            </button>
+            <button class="icon-button" type="button" data-repeat aria-label="Repeat track" title="Repeat track">
+              <svg class="icon"><use href="#icon-repeat"></use></svg>
+            </button>
+          </div>
+
+          <div class="volume-line">
+            <svg class="icon"><use href="#icon-volume"></use></svg>
+            <input id="volumeRange" class="range" type="range" min="0" max="1" step="0.01" value="0.75" aria-label="Volume">
+            <button class="button button--tiny" type="button" data-sleep-timer>
+              <svg class="icon"><use href="#icon-timer"></use></svg>
+              Sleep 15
+            </button>
+          </div>
+
+          <audio id="birthdayAudio" src="song1.mp3" preload="metadata"></audio>
+        </article>
+
+        <aside class="lyric-panel" aria-label="Lyrics and queue">
+          <div class="lyric-panel__head">
+            <div>
+              <p class="panel-kicker">Live lines</p>
+              <h3>Wish sync</h3>
+            </div>
+            <span class="status-pill" data-audio-status>waiting</span>
+          </div>
+          <ol class="lyric-list" data-lyrics>
+            <li class="is-active">Lights on, cake bright, everybody gather close.</li>
+            <li>One song for the smile that turns the whole room gold.</li>
+            <li>Here is to the year that opens like a sky full of sparks.</li>
+            <li>Press play, make a wish, let the night remember this.</li>
+          </ol>
+          <div class="queue-list" data-queue-list>
+            <button class="queue-card is-active" type="button">
+              <span class="queue-card__number">01</span>
+              <div>
+                <strong>Alveera's Birthday Anthem</strong>
+                <small>Opening sparkle</small>
+              </div>
+              <svg class="icon icon--pulse"><use href="#icon-music"></use></svg>
+            </button>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section-pad countdown-zone" id="cake" aria-labelledby="cakeTitle">
+      <div class="section-heading">
+        <p class="eyebrow">Candle command center</p>
+        <h2 id="cakeTitle">Countdown, cake, and fireworks</h2>
+      </div>
+      <div class="countdown-grid">
+        <article class="countdown-panel">
+          <div class="countdown-panel__top">
+            <svg class="icon icon--pulse"><use href="#icon-timer"></use></svg>
+            <div>
+              <p class="panel-kicker">Birthday clock</p>
+              <h3 data-countdown-label>Birthday mode today</h3>
+            </div>
+          </div>
+          <div class="countdown" data-countdown>
+            <div><strong data-days>--</strong><span>days</span></div>
+            <div><strong data-hours>--</strong><span>hours</span></div>
+            <div><strong data-minutes>--</strong><span>minutes</span></div>
+            <div><strong data-seconds>--</strong><span>seconds</span></div>
+          </div>
+        </article>
+
+        <article class="cake-panel" aria-label="Interactive cake">
+          <div class="cake-stage">
+            <div class="cake-plate"></div>
+            <div class="cake">
+              <div class="cake__top"></div>
+              <div class="cake__body"></div>
+              <div class="cake__icing"></div>
+              <button class="candle" type="button" aria-label="Blow out candle 1" data-candle><span></span></button>
+              <button class="candle" type="button" aria-label="Blow out candle 2" data-candle><span></span></button>
+              <button class="candle" type="button" aria-label="Blow out candle 3" data-candle><span></span></button>
+              <button class="candle" type="button" aria-label="Blow out candle 4" data-candle><span></span></button>
+              <button class="candle" type="button" aria-label="Blow out candle 5" data-candle><span></span></button>
+            </div>
+          </div>
+          <div class="cake-panel__actions">
+            <button class="button button--primary" type="button" data-light-candles>
+              <svg class="icon"><use href="#icon-cake"></use></svg>
+              Relight candles
+            </button>
+            <button class="button button--soft" type="button" data-fireworks>
+              <svg class="icon icon--wiggle"><use href="#icon-spark"></use></svg>
+              Fireworks
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-pad wish-zone" id="wishes" aria-labelledby="wishesTitle">
+      <div class="section-heading section-heading--inline">
+        <div>
+          <p class="eyebrow">Wish engine</p>
+          <h2 id="wishesTitle">Generate cinematic birthday wishes</h2>
+        </div>
+        <button class="button button--primary" type="button" data-generate-wish>
+          <svg class="icon icon--float"><use href="#icon-heart"></use></svg>
+          New wish
+        </button>
+      </div>
+      <div class="wish-board">
+        <article class="wish-card wish-card--main">
+          <p class="panel-kicker">Featured wish</p>
+          <blockquote data-wish-output>
+            May your next year feel like a favorite song at full volume: warm, wild, bright, and completely yours.
+          </blockquote>
+          <div class="wish-card__footer">
+            <button class="button button--soft" type="button" data-copy-wish>Copy wish</button>
+            <button class="button button--soft" type="button" data-open-wish>Wish modal</button>
+          </div>
+        </article>
+        <article class="wish-card wish-card--stack">
+          <span class="floating-token">Joy</span>
+          <span class="floating-token">Glow</span>
+          <span class="floating-token">Cake</span>
+          <span class="floating-token">Music</span>
+          <span class="floating-token">Magic</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-pad memory-zone" id="memories" aria-labelledby="memoriesTitle">
+      <div class="section-heading">
+        <p class="eyebrow">Memory deck</p>
+        <h2 id="memoriesTitle">Photos, timeline, and tiny moments</h2>
+      </div>
+      <div class="memory-layout">
+        <div class="timeline" aria-label="Birthday timeline">
+          <article class="timeline-item is-hot">
+            <span>01</span>
+            <div>
+              <h3>Morning surprise</h3>
+              <p>Start with a message that feels personal and loud in the best way.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span>02</span>
+            <div>
+              <h3>Photo blast</h3>
+              <p>A tiny memory wall for the smiles, cake lights, and party moments around you.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span>03</span>
+            <div>
+              <h3>Song moment</h3>
+              <p>Hit play when everyone is ready, then let the visualizer do its thing.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span>04</span>
+            <div>
+              <h3>Candle finale</h3>
+              <p>Tap every candle and trigger a fireworks finish.</p>
+            </div>
+          </article>
+        </div>
+
+        <article class="photo-lab">
+          <div class="photo-grid" data-photo-grid aria-live="polite">
+            <div class="photo-tile photo-tile--placeholder">Alveera's smile</div>
+            <div class="photo-tile photo-tile--placeholder">Cake lights</div>
+            <div class="photo-tile photo-tile--placeholder">Birthday crew</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-pad gift-zone" id="gifts" aria-labelledby="giftsTitle">
+      <div class="section-heading section-heading--inline">
+        <div>
+          <p class="eyebrow">Gift vault</p>
+          <h2 id="giftsTitle">Six surprises are waiting</h2>
+        </div>
+        <button class="button button--soft" type="button" data-reset-gifts>
+          <svg class="icon"><use href="#icon-gift"></use></svg>
+          Reset gifts
+        </button>
+      </div>
+      <div class="gift-grid" data-gift-grid>
+        <button class="gift-box" type="button" data-gift="A custom playlist night">
+          <span class="gift-box__lid"></span>
+          <span class="gift-box__body"></span>
+          <strong>Gift 01</strong>
+        </button>
+        <button class="gift-box" type="button" data-gift="One no-budget dessert run">
+          <span class="gift-box__lid"></span>
+          <span class="gift-box__body"></span>
+          <strong>Gift 02</strong>
+        </button>
+        <button class="gift-box" type="button" data-gift="Movie marathon pick">
+          <span class="gift-box__lid"></span>
+          <span class="gift-box__body"></span>
+          <strong>Gift 03</strong>
+        </button>
+        <button class="gift-box" type="button" data-gift="A handwritten letter unlock">
+          <span class="gift-box__lid"></span>
+          <span class="gift-box__body"></span>
+          <strong>Gift 04</strong>
+        </button>
+        <button class="gift-box" type="button" data-gift="Midnight snack delivery">
+          <span class="gift-box__lid"></span>
+          <span class="gift-box__body"></span>
+          <strong>Gift 05</strong>
+        </button>
+        <button class="gift-box" type="button" data-gift="One adventure day pass">
+          <span class="gift-box__lid"></span>
+          <span class="gift-box__body"></span>
+          <strong>Gift 06</strong>
+        </button>
+      </div>
+    </section>
+
+    <section class="section-pad game-zone" id="game" aria-labelledby="gameTitle">
+      <div class="section-heading section-heading--inline">
+        <div>
+          <p class="eyebrow">Mini game</p>
+          <h2 id="gameTitle">Catch the falling sparks</h2>
+        </div>
+        <div class="score-chip">
+          <span>Score</span>
+          <strong data-game-score>0</strong>
+        </div>
+      </div>
+      <div class="game-shell">
+        <canvas id="sparkGame" width="1100" height="420" aria-label="Falling spark catching game"></canvas>
+        <div class="game-shell__actions">
+          <button class="button button--primary" type="button" data-start-game>
+            <svg class="icon"><use href="#icon-play"></use></svg>
+            Start game
+          </button>
+          <button class="button button--soft" type="button" data-reset-game>Reset score</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad guestbook-zone" id="guestbook" aria-labelledby="guestbookTitle">
+      <div class="section-heading">
+        <p class="eyebrow">Guestbook</p>
+        <h2 id="guestbookTitle">Birthday notes from the people who showed up</h2>
+      </div>
+      <div class="guestbook-layout">
+        <form class="guest-form" data-guest-form>
+          <label>
+            <span>Your name</span>
+            <input type="text" name="guestName" maxlength="24" placeholder="Friend">
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="guestMessage" maxlength="220" placeholder="Write a birthday note"></textarea>
+          </label>
+          <div class="mood-row" aria-label="Mood">
+            <label><input type="radio" name="mood" value="glowing" checked><span>Glowing</span></label>
+            <label><input type="radio" name="mood" value="wild"><span>Wild</span></label>
+            <label><input type="radio" name="mood" value="sweet"><span>Sweet</span></label>
+          </div>
+          <button class="button button--primary" type="submit">
+            <svg class="icon"><use href="#icon-plus"></use></svg>
+            Add note
+          </button>
+        </form>
+        <div class="guest-notes" data-guest-notes aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <strong>For Alveera</strong>
+      <span>all lights on for your birthday</span>
+    </div>
+    <button class="button button--soft" type="button" data-back-top>
+      <svg class="icon icon--back"><use href="#icon-chevron"></use></svg>
+      Top
+    </button>
+  </footer>
+
+  <dialog class="wish-dialog" id="wishDialog">
+    <form method="dialog">
+      <button class="icon-button wish-dialog__close" value="close" aria-label="Close wish">
+        <svg class="icon"><use href="#icon-plus"></use></svg>
+      </button>
+      <div class="wish-dialog__spark" aria-hidden="true"></div>
+      <p class="eyebrow">Private wish</p>
+      <h2>A quiet wish, then the sky gets louder.</h2>
+      <textarea data-private-wish maxlength="180" placeholder="Type a secret birthday wish"></textarea>
+      <button class="button button--primary" type="button" data-launch-wish>
+        <svg class="icon icon--float"><use href="#icon-spark"></use></svg>
+        Launch wish
+      </button>
+    </form>
+  </dialog>
+
+  <div class="toast-region" data-toast-region aria-live="polite" aria-atomic="true"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
