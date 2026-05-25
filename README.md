@@ -1,4 +1,4 @@
-A feature-loaded static birthday website made for Alveera.
+A feature-loaded static birthday website made for anyone.
 
 ## Use
 
